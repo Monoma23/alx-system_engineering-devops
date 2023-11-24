@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# use case exaple of for loop
+
+for ((i=0; i<10; i++))
+do
+  echo "Best School"
+done

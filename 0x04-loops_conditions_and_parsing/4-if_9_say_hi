@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# print "Best School" 10 times
+
+j=0
+
+while [ $j -lt 10 ]
+do
+  if [[ $j -eq 9 ]]
+  then	  
+    echo "Hi"
+  fi
+    echo "Best School" 
+	(( j++ ))
+done

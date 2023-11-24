@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+# print "Best School" 10 times
+
+heure=0
+
+while [ $heure -le 12 ]
+do
+  echo "Hour: $heure"
+  mint=1
+  while [ $mint -le 59 ]
+  do
+    echo "$mint"
+    (( mint++ ))
+  done
+  (( heure++ ))
+done
+
