@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# tgis scriptisplays its proper PID
+ps aux --forest

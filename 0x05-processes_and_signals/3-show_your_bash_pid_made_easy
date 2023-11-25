@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# tgis scriptisplays its proper PID
+
+pgrep -l bash

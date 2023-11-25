@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# tgis script displays a str indefinitlty
+
+pkill 4-to_infinity_and_beyond

@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# tgis script displays a str indefinitlty
+
+j=1
+trap func SIGTERM
+function func() {
+	echo "I am invincible!!!"
+}
+while [ $j -eq 1 ]; do
+	echo "To infinity and beyond"
+	sleep 2
+done
