@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 # Useing ssh to connect to server using pk without -l
 
-ssh -i ~/.ssh/school ubuntu@54.196.41.20
+ssh -i ~/.ssh/school ubuntu@54.164.185.176
