@@ -10,10 +10,10 @@ def recurse(subreddit, hot_list=[], after=""):
     if after is None:
         return []
 
-    myurl = f"https://www.reddit.com/r/{subreddit}/hot.json"
-    myurl += f"?limit=100&after={after}"
-    Myheaders = {'user-agent': 'request'}
-    response = requests.get(myurl, Myheaders=Myheaders, allow_redirects=False)
+    url = f"https://www.reddit.com/r/{subreddit}/hot.json"
+    url += f"?limit=100&after={after}"
+    headers = {'user-agent': 'request'}
+    response = requests.get(url, headers=headers, allow_redirects=False)
 
     if response.status_code != 200:
         return None
@@ -25,3 +25,4 @@ def recurse(subreddit, hot_list=[], after=""):
         hot_list.append(postt.get("data").get("title"))
 
     return hot_list + recurse(subreddit, [], r_json.get("data").get("after"))
+sh: 1: q: not found
