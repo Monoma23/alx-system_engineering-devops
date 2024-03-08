@@ -20,7 +20,7 @@ def count_words(subreddit, listWord, countWord={}, after=None):
     info = mysubInfo.json()
 
     myhot_l = [child.get("data").get("title")
-    for child in info.get("data").get("children")]
+               for child in info.get("data").get("children")]
 
     if not myhot_l:
         return None
@@ -40,7 +40,7 @@ def count_words(subreddit, listWord, countWord={}, after=None):
     if not info.get("data").get("after"):
         countsOrdred = sorted(countWord.items(), key=lambda kv: kv[0])
         countsOrdred = sorted(countWord.items(),
-        key=lambda kv: kv[1], reverse=True)
+                              key=lambda kv: kv[1], reverse=True)
         [print('{}: {}'.format(k, v)) for k, v in countsOrdred if v != 0]
     else:
         return count_words(subreddit, listWord, countWord,
