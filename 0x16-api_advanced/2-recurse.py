@@ -25,4 +25,3 @@ def recurse(subreddit, hot_list=[], after=""):
         hot_list.append(postt.get("data").get("title"))
 
     return hot_list + recurse(subreddit, [], r_json.get("data").get("after"))
-sh: 1: q: not found
