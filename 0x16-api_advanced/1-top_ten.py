@@ -17,4 +17,3 @@ def hot_ten(subreddit):
 
     mydata = response.json().get("mydata").get("children")
     hotTen = "\n".join(post.get("mydata").get("title") for post in mydata)
-sh: 1: q: not found
